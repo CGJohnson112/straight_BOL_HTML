@@ -23,6 +23,8 @@
 
 <h1>STRAIGHT BILL OF LADING</h1>
 </div>
+
+<form action="generate.php" method="POST">
 <table class ='table table-bordered'>
 	<tr>
 		<th>SHIPPER NAME</th>
@@ -31,10 +33,10 @@
 		<th>SHIPPER STATE</th>
 	</tr>
 	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td><input type="text" class="form-control" name="ship_name"/></td>
+		<td><input type="text" class="form-control" name="ship_addr"/></td>
+		<td><input type="text" class="form-control" name="ship_city"/></td>
+		<td><input type="text" class="form-control" name="ship_state"/></td>
 	</tr>
 </table>
 
@@ -47,10 +49,10 @@
 		<th>CONSIGNEE STATE</th>
 	</tr>
 	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td><input type="text" class="form-control" name="cons_name"/></td>
+		<td><input type="text" class="form-control" name="cons_addr"/></td>
+		<td><input type="text" class="form-control" name="cons_city"/></td>
+		<td><input type="text" class="form-control" name="cons_state"/></td>
 	</tr>
 </table>
 <table class ='table table-bordered'>
@@ -64,14 +66,19 @@
 		<th>CARRIER PRO #</th>
 
 	</tr>
+	
+
+
+
 	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td><input type="text" class="form-control" name="ship_date"/></td>
+		<td><input type="text" class="form-control" name="ship_reference"/></td>
+		<td><input type="text" class="form-control" name="ship_PO"/></td>
+		<td><input type="text" class="form-control" name="BOL"/></td>
+		<td><input type="text" class="form-control" name="ship_due_date"/></td>
+		<td><input type="text" class="form-control" name="ship_carrier"/></td>
+		<td><input type="text" class="form-control" name="ship_carrier_npro"/></td>
+		
 	</tr>
 </table>
 
@@ -91,12 +98,12 @@
 	</tr>
 	<tr>
 		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td><input type="text" class="form-control" name="pieces"/></td>
+		<td><input type="text" class="form-control" name="descrip"/></td>
+		<td><input type="text" class="form-control" name="weight"/></td>
+		<td><input type="text" class="form-control" name="class"/></td>
+		<td><input type="text" class="form-control" name="nmfc_no"/></td>
+		<td><input type="text" class="form-control" name="hz"/></td>
 	</tr>
 	<tr>
 		<td></td>
@@ -170,7 +177,7 @@
 		<th><label>COMMENTS</label></th>
 	</tr>
 	<tr>
-		<td><textarea name="" id="" cols="100" rows="10"></textarea></td>
+		<td><textarea class="form-control" name="comments" id=""></textarea></td>
 	</tr>
 
 </table>
@@ -199,7 +206,11 @@
 		<td></td>	
 	</tr>
 
+
 </table>
+<button type="submit" class="btn btn-success">Submit</button>
+<button type="reset" class="btn btn-warning">Reset</button>
+</form>
 <br />
 <div class="disclosure">
 	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam fuga error rerum ut beatae, pariatur ea natus deleniti maxime veritatis perspiciatis excepturi facere eius eveniet quaerat, laudantium doloribus sunt, voluptate sint vel illum vitae.
@@ -219,9 +230,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut eos esse ipsam ad i
 </body>
 <!-- Latest compiled and minified JavaScript -->
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script src="script.js"></script>
+
 </html>
 
 

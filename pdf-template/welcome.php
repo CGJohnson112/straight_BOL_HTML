@@ -1,31 +1,3 @@
-<?php
-$ship_name = "Gucci Mane Fashions Inc";
-$ship_addr = "555 Beverly Ave";
-$ship_city = "Atlanta";
-$ship_state = "GA";
-
-$cons_name = "Walmart DC 1050";
-$cons_addr = "1240 St Ge. Road";
-$cons_city = "Lincoln";
-$cons_state = "NE";
-
-$ship_date = "12/06/2018";
-$ship_reference = "5649543";
-$ship_PO = "4323232";
-$BOL = "5555555555";
-$ship_due_date = "12/09/2018";
-$ship_carrier = "Mom and Pop Transportation, Co of Arizona LLC ";
-$ship_carrier_npro = "SV12232";
-
-$pieces = "500";
-$descrip = "Freight all kinds";
-$weight = "34000";
-$class = "dry";
-$nmfc_no = "50";
-$hz = "N";
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,7 +11,7 @@ $hz = "N";
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="../style.css">
 	<!--jquery-->
 	
 
@@ -257,5 +229,3 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut eos esse ipsam ad i
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="script.js"></script>
 </html>
-
-
