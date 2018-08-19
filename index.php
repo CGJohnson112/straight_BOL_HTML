@@ -11,6 +11,20 @@
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+
+
+
+	<!--  jQuery -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+	<!-- Isolated Version of Bootstrap, not needed if your site already uses Bootstrap -->
+	<link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
+
+	<!-- Bootstrap Date-Picker Plugin -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+
 	<link rel="stylesheet" href="style.css">
 	<!--jquery-->
 	
@@ -36,7 +50,7 @@
 		<td><input type="text" class="form-control" name="ship_name"/></td>
 		<td><input type="text" class="form-control" name="ship_addr"/></td>
 		<td><input type="text" class="form-control" name="ship_city"/></td>
-		<td><input type="text" class="form-control" name="ship_state"/></td>
+		<td><?php include 'ship_state_option.php'?></td>
 	</tr>
 </table>
 
@@ -52,7 +66,7 @@
 		<td><input type="text" class="form-control" name="cons_name"/></td>
 		<td><input type="text" class="form-control" name="cons_addr"/></td>
 		<td><input type="text" class="form-control" name="cons_city"/></td>
-		<td><input type="text" class="form-control" name="cons_state"/></td>
+		<td><?php include 'cons_state_option.php'?></td>
 	</tr>
 </table>
 <table class ='table table-bordered'>
@@ -71,11 +85,11 @@
 
 
 	<tr>
-		<td><input type="text" class="form-control" name="ship_date"/></td>
+		<td><?include('ship_date.php'); ?></td>
 		<td><input type="text" class="form-control" name="ship_reference"/></td>
 		<td><input type="text" class="form-control" name="ship_PO"/></td>
 		<td><input type="text" class="form-control" name="BOL"/></td>
-		<td><input type="text" class="form-control" name="ship_due_date"/></td>
+		<td><?php include('cons_date.php'); ?></td>
 		<td><input type="text" class="form-control" name="ship_carrier"/></td>
 		<td><input type="text" class="form-control" name="ship_carrier_npro"/></td>
 		
@@ -230,6 +244,9 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut eos esse ipsam ad i
 </body>
 <!-- Latest compiled and minified JavaScript -->
 
+
+
+<script src="script.js"></script>
 
 </html>
 
