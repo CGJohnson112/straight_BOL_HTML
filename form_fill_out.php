@@ -10,6 +10,7 @@
 	<title>BOL</title>
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
 	<!--jquery-->
 	
@@ -17,10 +18,13 @@
 </head>
 <body>
 <div class="container">
-
+<img src="truck.jpg" alt="" />
 <div class="head">
+
 <h1>STRAIGHT BILL OF LADING</h1>
 </div>
+
+<form action="bol_pof.php" method="POST">
 <table class ='table table-bordered'>
 	<tr>
 		<th>SHIPPER NAME</th>
@@ -29,13 +33,13 @@
 		<th>SHIPPER STATE</th>
 	</tr>
 	<tr>
-		<td>Lorem ipsum dolor.</td>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td><input type="text" class="form-control" name="ship_name"/></td>
+		<td><input type="text" class="form-control" name="ship_addr"/></td>
+		<td><input type="text" class="form-control" name="ship_city"/></td>
+		<td><input type="text" class="form-control" name="ship_state"/></td>
 	</tr>
 </table>
-<br />
+
 
 <table class ='table table-bordered'>
 	<tr>
@@ -45,10 +49,10 @@
 		<th>CONSIGNEE STATE</th>
 	</tr>
 	<tr>
-		<td>Lorem ipsum dolor.</td>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td><input type="text" class="form-control" name="cons_name"/></td>
+		<td><input type="text" class="form-control" name="cons_addr"/></td>
+		<td><input type="text" class="form-control" name="cons_city"/></td>
+		<td><input type="text" class="form-control" name="cons_state"/></td>
 	</tr>
 </table>
 <table class ='table table-bordered'>
@@ -63,20 +67,21 @@
 
 	</tr>
 	<tr>
-		<td>Lorem ipsum dolor.</td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td><input type="text" class="form-control" name="ship_date"/></td>
+		<td><input type="text" class="form-control" name="ship_ref"/></td>
+		<td><input type="text" class="form-control" name="PO"/></td>
+		<td><input type="text" class="form-control" name="BOL"/></td>
+		<td><input type="text" class="form-control" name="date"/></td>
+		<td><input type="text" class="form-control" name="carrier"/></td>
+		<td><input type="text" class="form-control" name="carrier_pro"/></td>
+		
 	</tr>
 </table>
-<br />
 
 
 
-<table class ='table table-bordered'>
+
+<table class ='text table table-bordered'>
 <tr>
 		<th></th>
 		<th>PIECES</th>
@@ -88,13 +93,13 @@
 
 	</tr>
 	<tr>
-		<td>TOTALS</td>
-		<td>Lorem ipsum dolor.</td>
 		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td><input type="text" class="form-control" name="pieces"/></td>
+		<td><input type="text" class="form-control" name="desc"/></td>
+		<td><input type="text" class="form-control" name="weight"/></td>
+		<td><input type="text" class="form-control" name="class"/></td>
+		<td><input type="text" class="form-control" name="nmfc_no"/></td>
+		<td><input type="text" class="form-control" name="hz"/></td>
 	</tr>
 	<tr>
 		<td></td>
@@ -151,7 +156,7 @@
 		<td></td>
 	</tr>	
 	<tr>
-		<td></td>
+		<td>TOTALS</td>
 		<td></td>
 		<td></td>
 		<td></td>
@@ -168,7 +173,7 @@
 		<th><label>COMMENTS</label></th>
 	</tr>
 	<tr>
-		<td><textarea name="" id="" cols="100%" rows="10"></textarea></td>
+		<td><textarea class="form-control" name="comments" id=""></textarea></td>
 	</tr>
 
 </table>
@@ -181,7 +186,7 @@
 		<th>TRAILER #</th>
 	</tr>
 	<tr>
-		<td>Lorem ipsum dolor.</td>
+		<td></td>
 		<td></td>
 		<td></td>	
 	</tr>
@@ -192,12 +197,16 @@
 		<th>SEAL #</th>
 	</tr>
 	<tr>
-		<td>Lorem ipsum dolor.</td>
+		<td></td>
 		<td></td>
 		<td></td>	
 	</tr>
 
+
 </table>
+<button class="btn btn-success">Submit</button>
+<button class="btn btn-warning">Reset</button>
+</form>
 <br />
 <div class="disclosure">
 	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam fuga error rerum ut beatae, pariatur ea natus deleniti maxime veritatis perspiciatis excepturi facere eius eveniet quaerat, laudantium doloribus sunt, voluptate sint vel illum vitae.
